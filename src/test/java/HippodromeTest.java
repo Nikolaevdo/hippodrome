@@ -56,6 +56,6 @@ class HippodromeTest {
         Horse h4 = new Horse("Bob4", 1, 3);
         Horse h5 = new Horse("Bob5", 1, 4);
 
-        Hippodrome hippodrome = new Hippodrome(List.of(h1, h2, h3, h4, h5));
+        new Hippodrome(List.of(h1, h2, h3, h4, h5));
     }
 }
