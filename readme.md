@@ -90,7 +90,7 @@ What needs to be logged
 
 1.  If null was passed to the constructor, then before throwing the exception, add an entry like this to the log:`2022-05-31 17:29:30,029 ERROR Hippodrome: Horses list is null`
 2.  b. If an empty list was passed to the constructor, then before throwing the exception, add an entry like this to the log:`2022-05-31 17:30:41,074 ERROR Hippodrome: Horses list is empty`
-3.  At the end of the constructor, add an entry like this to the log:`2022-05-31 17:05:26,152 DEBUG Hippodrome: Создание Hippodrome, лошадей [7]`
+3.  At the end of the constructor, add an entry like this to the log:`2022-05-31 17:05:26,152 DEBUG Hippodrome: Creation Hippodrome, horse [7]`
 
 ### 3\. Horse class:
 
@@ -98,7 +98,7 @@ What needs to be logged
 2.  If the name passed to the constructor is empty, then before throwing the exception, add an entry like this to the log:`2022-05-31 17:36:44,196 ERROR Horse: Name is blank`
 3.  If the speed passed to the constructor is less than zero, then before throwing the exception, add an entry like this to the log:`2022-05-31 17:40:27,267 ERROR Horse: Speed is negative`
 4.  If the distance passed to the constructor is less than zero, then before throwing the exception, add an entry like this to the log:`2022-05-31 17:41:21,938 ERROR Horse: Distance is negative`
-5.  At the end of the constructor, add an entry like this to the log:`2022-05-31 17:15:25,842 DEBUG Horse: Создание Horse, имя [Лобстер], скорость [2.8]`
+5.  At the end of the constructor, add an entry like this to the log:`2022-05-31 17:15:25,842 DEBUG Horse: Creation Horse, name [Lobster], speed [2.8]`
 
 Logs should be written to the **hippodrome.log** file , which should be located in the project root in the **logs** folder . Every day the file should be renamed according to the pattern **hippodrome.2021-12-31.log** and a new **hippodrome.log** should be created instead . To do this, use the RollingFile **appender** . In this case, files older than 7 days should be deleted. To do this, you can use a construct like:
 
@@ -110,7 +110,3 @@ Logs should be written to the **hippodrome.log** file , which should be located 
 
 '</Delete>'
 '</DefaultRolloverStrategy>'
-
-
-
-Googled what to substitute instead of three dots.😊
